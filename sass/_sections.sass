@@ -52,10 +52,10 @@ section.sec-two
     .row
       .col-md-12
         .sl-cont
-          background-image: url("../files/sl-mock.jpg")
-          background-repeat: no-repeat
-          background-size: contain
-          height: 593px
+          // background-image: url("../files/sl-mock.jpg")
+          // background-repeat: no-repeat
+          // background-size: contain
+          // height: 593px
 
 section.sec-three
   width: 100%
@@ -95,10 +95,41 @@ section.sec-four
       font-weight: bold
     .col-md-12  
       .sl-cont
-          background-image: url("../files/tes-mock.jpg")
-          background-repeat: no-repeat
-          background-position: 50% 0%
-          height: 200px
+        margin-left: 10%
+        margin-right: 10%
+        .owl-carousel
+          div
+            p
+              color: $gr1
+              text-align: center
+              margin-top: 20px
+            span.te-auth
+              display: block
+              text-align: center
+              text-transform: capitalize
+              font-weight: bold
+              font-size: 32px
+              margin-top: 40px
+            span.te-func
+              &::before
+                content: '- '
+              color: $gr1
+              text-align: center
+              display: block
+              text-transform: uppercase
+              font-size: 20px
+              margin-top: 5px
+          .owl-nav
+            position: relative
+            bottom: 150px
+            button
+              position: relative
+            .owl-prev
+              left: -60px
+            .owl-next
+              float: right
+              right: -60px
+
 
 section.sec-five
   padding: 100px 0
@@ -111,31 +142,5 @@ section.sec-five
         padding: 40px 0 35px 0
         margin: 0
         font-weight: bold
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+     
+  
