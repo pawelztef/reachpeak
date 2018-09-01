@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/owlcarousel/owl.carousel.css">
     <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"> -->
     <link rel="stylesheet" href="css/index.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
@@ -109,7 +107,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="sl-cont">
-              <div class="owl-carousel">
+              <div class="owl-carousel owl-theme owl-port">
                 <div><img class="img-responsive" src="files/sl-mock-1.jpg" alt=""></div>
                 <div><img class="img-responsive" src="files/sl-mock-2.jpg" alt=""></div>
                 <div><img class="img-responsive" src="files/sl-mock-3.jpg" alt=""></div>
@@ -147,7 +145,7 @@
           <h2 class="text-center">What Our Customers Say..</h2>
           <div class="col-md-12">
             <div class="sl-cont">
-              <div class="owl-carousel">
+              <div class="owl-carousel owl-tes owl-theme">
                 <div> 
                   <p class="te-txt">
                   1 Sit quia repudiandae eum qui tenetur? Enim officia aspernatur veritatis possimus lorem Voluptate consequatur quos veniam ut accusamus. Impedit minima vel nobis non doloremque Reprehenderit facere repellendus reprehenderit sapiente illo.
@@ -190,11 +188,6 @@
                   <span class="te-auth">jane doe</span>
                   <span class="te-func">manager cork</span>
                 </div>
-                <!-- <div><img class="img-responsive" src="files/tes-mock-1.jpg" alt=""></div> -->
-                <!-- <div><img class="img-responsive" src="files/tes-mock-2.jpg" alt=""></div> -->
-                <!-- <div><img class="img-responsive" src="files/tes-mock-3.jpg" alt=""></div> -->
-                <!-- <div><img class="img-responsive" src="files/tes-mock-4.jpg" alt=""></div> -->
-                <!-- <div><img class="img-responsive" src="files/tes-mock-5.jpg" alt=""></div> -->
               </div>
             </div>
           </div>
@@ -287,11 +280,13 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
     <script>
       $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
+        $(".owl-carousel.owl-tes").owlCarousel({
           items: 1,
-          nav: true,
           dots: true,
-          navText: [ '<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>' ]
+        });
+        $(".owl-carousel.owl-port").owlCarousel({
+          items: 1,
+          dots: true,
         });
       });
     </script>

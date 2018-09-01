@@ -52,10 +52,51 @@ section.sec-two
     .row
       .col-md-12
         .sl-cont
-          // background-image: url("../files/sl-mock.jpg")
-          // background-repeat: no-repeat
-          // background-size: contain
-          // height: 593px
+          .owl-carousel
+            div
+              p
+                color: $gr1
+                text-align: center
+                margin-top: 20px
+              span.te-auth
+                display: block
+                text-align: center
+                text-transform: capitalize
+                font-weight: bold
+                font-size: 32px
+                margin-top: 40px
+              span.te-func
+                &::before
+                  content: '- '
+                color: $gr1
+                text-align: center
+                display: block
+                text-transform: uppercase
+                font-size: 20px
+                margin-top: 5px
+            .owl-nav
+              position: relative
+              bottom: 150px
+              button
+                &:focus
+                  outline: 0
+                position: relative
+                i
+                  padding: 5px 8px
+                  border: 2px solid lighten($gr1, 15%)
+                  color: lighten($gr1, 15%)
+                  border-radius: 100%
+              .owl-prev
+                left: -60px
+              .owl-next
+                float: right
+                right: -60px
+            .owl-dots
+              margin-top: 5px
+              margin-bottom: 40px
+              text-align: center
+              .owl-dot:focus
+                outline: none
 
 section.sec-three
   width: 100%
@@ -123,12 +164,26 @@ section.sec-four
             position: relative
             bottom: 150px
             button
+              &:focus
+                outline: 0
               position: relative
+              i
+                padding: 5px 8px
+                border: 2px solid lighten($gr1, 15%)
+                color: lighten($gr1, 15%)
+                border-radius: 100%
             .owl-prev
               left: -60px
             .owl-next
               float: right
               right: -60px
+          .owl-dots
+            margin-top: 60px
+            text-align: center
+            .owl-dot:focus
+              outline: none
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+  background: $gr1
 
 
 section.sec-five
