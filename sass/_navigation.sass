@@ -1,6 +1,12 @@
+$screen-lg-min: 1200px
+$screen-md-min: 992px
+$screen-collapse-min: 832px
+$screen-sm-min: 768px
+
 .navbar
   margin-bottom: 0
   border: none
+
 .navbar-default
   background-color: $wt
   border-color: transparent
@@ -16,6 +22,8 @@
   .navbar-wrp:nth-of-type(2)
     padding-top: 20px
     padding-right: 15px
+    @media (max-width: $screen-sm-min)
+      padding: 5px 0 
 
   #navbar-top.navbar-nav>li
     color: $bl 
@@ -26,10 +34,19 @@
   ul#navbar-main
     position: relative
     top: 1px
+    @media (max-width: $screen-lg-min)
+      top: 0
+      margin-right: -15px
+    @media (max-width: $screen-sm-min)
+      text-align: center
+      top: 0
+
   #navbar-main.navbar-nav>li>a,
     color: $bl 
     padding-left: 10px
     padding-right: 10px
+    @media (max-width: $screen-sm-min)
+      padding: 10px
     &:hover
       color: $or
   #navbar-main.navbar-nav>.active>a,
@@ -38,6 +55,9 @@
     color: $bl 
     background-color: $wt
     border-bottom: 3px solid $or
+    @media (max-width: $screen-sm-min)
+      border: none
+      color: $or
   
   #navbar-soc.navbar-nav>li>a,
     color: $bl 
@@ -51,13 +71,63 @@
     color: $bl 
 
 a.navbar-brand
-  border-right: 1px solid $gr1
   height: 100%
   padding: 22px 40px
-  box-shadow: 1px 0px rgba(189,190,192,0.25)  
 
 .header-cont
   height: 700px
   background-image: url("../images/header.jpg")
   background-size: cover
   background-repeat: no-repeat
+
+.navbar-default .navbar-toggle, 
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover
+  background-color: $wt
+  margin: 15px 20px 0px
+  border: none
+
+@media (max-width: $screen-collapse-min)
+  .navbar-header 
+    float: none
+
+  .navbar-toggle 
+    display: block
+
+  .navbar-collapse 
+    border-top: 1px solid transparent
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
+
+  .navbar-collapse.collapse 
+    display: none!important
+
+  .navbar-collapse.collapse.in 
+    display: block!important
+
+  .navbar-nav 
+    float: none!important
+    margin: 7.5px -15px
+
+  .navbar-nav>li 
+    float: none
+
+  .navbar-nav>li>a 
+    padding-top: 10px
+    padding-bottom: 10px
+
+  .navbar-form 
+    padding: 10px 15px
+    margin-top: 8px
+    margin-right: -15px
+    margin-bottom: 8px
+    margin-left: -15px
+    border-top: 1px solid transparent
+    border-bottom: 1px solid transparent
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1)
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1)
+    width:auto
+    float:none!important
+
+  a.navbar-brand
+    height: 100%
+    padding: 15px 20px
