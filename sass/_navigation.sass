@@ -71,9 +71,14 @@ a.navbar-brand
 
 .header-cont
   height: 700px
-  background-image: url("../images/header.jpg")
+  background-image: url("../images/header.png")
   background-size: cover
   background-repeat: no-repeat
+  background-position: 60%
+  @media (max-width: $screen-md-min)
+    height: 500px
+  @media (max-width: $screen-sm-min)
+    height: 300px
 
 .navbar-default .navbar-toggle, 
 .navbar-default .navbar-toggle:focus, 
