@@ -34,15 +34,15 @@
           <a class="visible-xs navbar-brand" href="index.html"><img src="images/logo-sm.jpg" alt="reachpeak logo"></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <div class="navbar-wrp hidden-xs">
+          <div class="navbar-wrp  hidden-xs">
             <ul id="navbar-top" class="nav navbar-nav navbar-right">
-              <li>Sligo +353 (0)71 457 98 44</li>
+              <li>Cork +353 (0)71 457 98 44</li>
               <li>|</li>
               <li>Dublin +353 (0)1 343 34 87</li>
             </ul>
           </div>
           <div class="navbar-wrp">
-            <ul id="navbar-soc" class="hidden-xs nav navbar-nav navbar-right">
+            <ul id="navbar-soc" class="hidden-xs  nav navbar-nav navbar-right">
               <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
               <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -66,10 +66,11 @@
     <div class="header-cont"></div>
     <!-- END OF HEADER --> 
     <!-- SECTION ONE --> 
-    <section class="container sec-one">
+    <section class="sec-one">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6 col-xs-12">
+            <img src="images/web-development.png" alt="">
             <h2>Web Development</h2>
             <p>
             Lorem sit sunt quo a maxime? Mollitia doloribus iusto tempore ipsam molestias Explicabo voluptatibus blanditiis
@@ -77,6 +78,7 @@
             <a href="pages/web-dev.html">Learn more</a>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
+            <img src="images/web-design.png" alt="">
             <h2>Web Design</h2>
             <p>
             Lorem sit sunt quo a maxime? Mollitia doloribus iusto tempore ipsam molestias Explicabo voluptatibus blanditiis
@@ -84,6 +86,7 @@
             <a href="pages/web-des.html">Learn more</a>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
+            <img src="images/graphic-design.png" alt="">
             <h2>Graphic Design</h2>
             <p>
             Lorem sit sunt quo a maxime? Mollitia doloribus iusto tempore ipsam molestias Explicabo voluptatibus blanditiis
@@ -91,6 +94,7 @@
             <a href="pages/gr-des.html">Learn more</a>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
+            <img src="images/digital-marketing.png" alt="">
             <h2>Digital Marketing</h2>
             <p>
             Lorem sit sunt quo a maxime? Mollitia doloribus iusto tempore ipsam molestias Explicabo voluptatibus blanditiis
@@ -109,11 +113,31 @@
           <div class="col-md-12">
             <div class="sl-cont">
               <div class="owl-carousel owl-theme owl-port">
-                <div><img class="img-responsive" src="files/sl-mock-1.jpg" alt=""></div>
-                <div><img class="img-responsive" src="files/sl-mock-2.jpg" alt=""></div>
-                <div><img class="img-responsive" src="files/sl-mock-3.jpg" alt=""></div>
-                <div><img class="img-responsive" src="files/sl-mock-4.jpg" alt=""></div>
-                <div><img class="img-responsive" src="files/sl-mock-5.jpg" alt=""></div>
+                <div>
+                  <div class="ls-rg">
+                    <img class="" src="images/portfolio-jadore-la-france.png" alt="">
+                  </div>
+                  <div class="sl-lf">
+                    <h3> Lorem dolor praesentium eos?  </h3>
+                    <p>
+                    Dolor tempore nisi odio eum temporibus? Delectus ducimus deleniti voluptate explicabo adipisci Ducimus aspernatur fugit
+                    </p>
+                    <a href="#">Read more about this project</a>
+                  </div>
+                </div>
+                <div>
+                  <div class="ls-rg">
+                    <img class="" src="images/portfolio-oes-krakow.png" alt="">
+                  </div>
+                  <div class="sl-lf">
+                    <h3> Dolor debitis praesentium incidunt quae?  </h3>
+                    <p>
+                    Amet quis ut amet ex aliquam quod Harum aliquam fuga architecto mollitia omnis eligendi? Sequi delectus neque ex aperiam debitis.
+                    Amet quis ut amet ex aliquam quod Harum aliquam fuga architecto mollitia omnis eligendi? Sequi delectus neque ex aperiam debitis.
+                    </p>
+                    <a href="#">Read more about this project</a>
+                  </div>
+                </div>
               </div>
             </div> 
           </div>
@@ -278,6 +302,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="scripts/owlcarousel/owl.carousel.min.js"></script>
+    <script src="scripts/main.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
     <script>
       $(document).ready(function(){
@@ -288,6 +313,7 @@
         $(".owl-carousel.owl-port").owlCarousel({
           items: 1,
           dots: true,
+          loop: true
         });
       });
     </script>

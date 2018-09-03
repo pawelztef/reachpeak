@@ -1,10 +1,13 @@
+
 section.sec-one
-  padding: 100px 0
   .container
     .row
       padding-top: 60px
+      padding-bottom: 60px
       .col-md-3
-        padding-top: 150px
+        img
+          display: block
+          margin: 60px auto
         height: 100%
         background-position: 50% 0%
         h2, p, a
@@ -15,82 +18,69 @@ section.sec-one
         h2
           font-weight: bold
           font-size: 20px
-          padding-bottom: 35px
+          padding-bottom: 15px
         p
           padding-bottom: 30px
-          padding-left: 10px
-          padding-right: 10px
         a
           font-size: 16px
           color: $or
           font-weight: bold
           text-decoration: none
-          padding-bottom: 50px
+          padding-bottom: 60px
           &:hover
             color: lighten($bl, 20%) 
-      .col-md-3:nth-of-type(1) 
-        background-image: url("../images/hm-ico-1.jpg")
-        background-repeat: no-repeat
-      .col-md-3:nth-of-type(2) 
-        background-image: url("../images/hm-ico-2.jpg")
-        background-repeat: no-repeat
-      .col-md-3:nth-of-type(3) 
-        background-image: url("../images/hm-ico-3.jpg")
-        background-repeat: no-repeat
-      .col-md-3:nth-of-type(4) 
-        background-image: url("../images/hm-ico-4.jpg")
-        background-repeat: no-repeat
     
 section.sec-two
   background: $gr3
   h2
     background: $wt
-    padding: 40px 0 35px 0
+    padding-bottom: 65px
     margin: 0
     font-weight: bold
   .container
+    padding: 60px 15px 0 15px
     .row
       .col-md-12
         .sl-cont
           .owl-carousel
             div
-              p
-                color: $gr1
-                text-align: center
-                margin-top: 20px
-              span.te-auth
-                display: block
-                text-align: center
-                text-transform: capitalize
-                font-weight: bold
-                font-size: 32px
-                margin-top: 40px
-              span.te-func
-                &::before
-                  content: '- '
-                color: $gr1
-                text-align: center
-                display: block
-                text-transform: uppercase
-                font-size: 20px
-                margin-top: 5px
-            .owl-nav
-              position: relative
-              bottom: 150px
-              button
-                &:focus
-                  outline: 0
-                position: relative
-                i
-                  padding: 5px 8px
-                  border: 2px solid lighten($gr1, 15%)
-                  color: lighten($gr1, 15%)
-                  border-radius: 100%
-              .owl-prev
-                left: -60px
-              .owl-next
+              .sl-lf
+                padding: 60px 40px 60px 0
+                background-color: $gr3
+                display: inline
+                width: 50%
+                float: left
+                position: absolute
+                top: 15%
+                @media (max-width: $screen-md-min)
+                  position: relative
+                  text-align: center
+                  width: 100%
+                  padding: 40px 0 60px 0
+                h3
+                  font-weight: bold
+                p
+                  padding: 5px 0 15px
+                  @media (max-width: $screen-md-min)
+                    padding: 0 10px 30px 0
+              .ls-rg
+                padding: 60px 0
+                background-color: $gr3 
+                display: inline
+                height: 100%
+                width: 50%
                 float: right
-                right: -60px
+                @media (max-width: $screen-md-min)
+                  float: none 
+                  width: 100%
+                  padding: 60px 0
+                img
+                  @media (max-width: $screen-md-min)
+                    width: 60%
+                    margin: 0 auto
+                    margin-top: 60px
+                    position: relative
+                    left: 19px
             .owl-dots
               margin-top: 5px
               margin-bottom: 40px
@@ -128,7 +118,7 @@ section.sec-three
       margin: 0 15px
 
 section.sec-four
-  padding: 100px 0
+  padding: 40px 0
   .container
     h2
       padding: 40px 0 35px 0
@@ -136,8 +126,6 @@ section.sec-four
       font-weight: bold
     .col-md-12  
       .sl-cont
-        margin-left: 10%
-        margin-right: 10%
         .owl-carousel
           div
             p
@@ -187,15 +175,31 @@ section.sec-four
 
 
 section.sec-five
-  padding: 100px 0
+  padding: 60px 0
   background: $gr3
   .container
     .row
       p
         color: $gr1
+        @media (max-width: $screen-md-min)
+          padding: 0 10px
       h2
-        padding: 40px 0 35px 0
+        padding: 0px 0 35px 0
         margin: 0
         font-weight: bold
      
   
+section.sec-one,
+section.sec-two,
+section.sec-three,
+section.sec-four,
+section.sec-five
+  .row .col-md-3 
+    @media (max-width: $screen-sm-min)
+      img
+        width: 100px
+    @media (max-width: $screen-sm-min)
+      a
+        padding-bottom: 0 !important
+  
+    
