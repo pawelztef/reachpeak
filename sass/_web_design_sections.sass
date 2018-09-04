@@ -1,23 +1,71 @@
 section.web-des-sec-one
-  .container
-    .row
-      .col-md-8
-      .col-md-4
-        display: flex
-        a
-          border: 1px solid $or
-          padding: 10px 75px
-          align-self: center
-          
-section.web-des-sec-two
-  .container
-    .row
-      .col-md-8
-      .col-md-4
-        ul.side-nav
-          list-style: none
-          border-left: 1px $gr1 dashed
-          margin: 0
-          padding: 0
-          img
-            width: 70px
+  .row
+    .col-sm-8
+      .row
+        .col-sm-12
+          h2
+            margin-top: 50px
+    .col-sm-4
+      .row
+        &:nth-of-type(1)
+          padding: 50px 20px 50px 20px
+          a
+            border: 1px solid $or
+            display: block
+            padding: 10px 0
+            width: 240px
+            font-size: 18px
+            text-align: center
+          @media (max-width: $screen-sm-min)
+            padding: 0
+            a
+              width: 95%
+              margin: 40px auto
+        &:nth-of-type(2)
+          ul.side-nav
+            padding: 30px 0 20px 0
+            list-style: none
+            border-left: 1px $gr1 dashed
+            li
+              padding-left: 20px
+              padding-bottom: 40px
+              &:last-of-type
+                padding-top: 25px
+                padding-bottom: 0
+                div
+                  width: 240px
+                  p
+                    text-align: center
+                    font-weight: bold
+                    font-size: 18px
+                    display: block
+                    &:first-of-type
+                      color: $or
+                    &:last-of-type
+                      padding: 10px 0
+                      background-color: $or
+                      color: $wt
+                  @media (max-width: $screen-sm-min)
+                    width: 95%
+                    margin: 0 auto
+              @media (max-width: $screen-sm-min)
+                text-align: center
+                padding-left: 0
+                padding-bottom: 60px
+              h3 
+                padding-top: 8px
+                font-size: 20px
+                margin: 0
+                color: $bl
+            @media (max-width: $screen-sm-min)
+              border: none
+            img
+              width: 70px
+              float: left
+              margin-right: 20px
+              position: relative
+              top: -10px
+              @media (max-width: $screen-sm-min)
+                width: 100px
+                float: none
+                margin-right: 0
