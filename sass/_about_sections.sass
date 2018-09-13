@@ -1,5 +1,7 @@
 section.about-sec-one
-  padding: 40px 0
+  padding: 40px 10px
+  @media (max-width: $screen-sm-min)
+    padding: 20px 10px
   h2
     margin-left: 10%
     margin-right: 10%
@@ -9,10 +11,19 @@ section.about-sec-one
     color: $gr1
     font-size: 16px
 section.about-sec-two
-  padding: 40px 0
+  padding: 40px 10px 0 10px
+  @media (max-width: $screen-sm-min)
+    padding: 20px 10px
   .row
     .col-md-6
       color: $gr1
+      margin-bottom: 40px
+      @media (max-width: $screen-md-min)
+        text-align: center
+        img
+          margin: 0 auto
+      p
+        padding: 20px 0
       h3
         color: $bl
       ul.mis-ul
@@ -38,6 +49,12 @@ section.about-sec-four
       .col-sm-3
         text-align: center
         padding: 60px 0
+        @media (max-width: $screen-sm-min)
+          padding: 40px 0
+          &:last-of-type
+            padding-bottom: 60px
+          &:first-of-type
+            padding-top: 60px
         p
           font-size: 18px
           padding: 0 60px 
@@ -64,7 +81,7 @@ section.about-sec-four
 
 
 section.about-sec-five
-  padding: 40px 0
+  padding: 20px 0 0px 0
   .container
     h2
       padding: 40px 0 35px 0
