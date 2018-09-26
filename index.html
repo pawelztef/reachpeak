@@ -303,6 +303,20 @@
           dots: true,
           loop: true
         });
+
+        $(window).on('scroll', function(){ 
+          console.log($(window).scrollTop());
+          if($(window).scrollTop() >= 35 ) {
+            console.log('in');
+            $('.navbar-default').addClass('navbar-fixed');
+          } else {
+            console.log('out');
+            $('.navbar-default').removeClass('navbar-fixed');
+          }
+        });
+
+
+
       });
     </script>
   </body>

@@ -6,6 +6,9 @@
   background-color: $wt
   border-color: transparent
   font-size: 16px
+  top: 0
+  transition: top .3s ease-out
+  border-radius: 0
 
   .navbar-nav>li>a
     &:hover
@@ -84,6 +87,9 @@ a.navbar-brand
   background-size: cover
   background-repeat: no-repeat
   background-position: 60%
+  position: relative
+  top: -85px
+  z-index: -1
   @media (max-width: $screen-md-min)
     height: 500px
   @media (max-width: $screen-sm-min)
@@ -140,3 +146,13 @@ a.navbar-brand
   a.navbar-brand
     height: 100%
     padding: 15px 20px
+
+
+.navbar-fixed
+  position: fixed
+  width: 100%
+  border-radius: initial
+  top: -35px
+  z-index: 999
+  background-color: red
+
