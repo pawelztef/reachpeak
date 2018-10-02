@@ -314,7 +314,7 @@ section.web-des-sec-two .row .col-sm-4 .row:nth-of-type(1) ul.side-nav li:last-o
     border-bottom: 1px dashed #bdbec0;
     margin-bottom: 60px;
 }
-.cl-ac p {
+.cl-ac p, .cl-ac h2 {
     padding-left: 15px;
 }
 .cl-ac-border-no{
