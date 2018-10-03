@@ -16,7 +16,7 @@ body {
 }
 
 .navbar-fixed .container-fluid .navbar-collapse .navbar-wrp #navbar-main {
-  top: 2px;
+  /* top: 2px; */
 }
 .navbar-fixed #navbar-top {
     display: none;
