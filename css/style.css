@@ -12,7 +12,7 @@ body {
 }
 
 .navbar-fixed {
-    top: -1px;
+    top: 0px;
 }
 
 .navbar-fixed #navbar-top {
@@ -110,7 +110,7 @@ a.navbar-brand {
 @media (max-width: 768px){
     .header-cont {
         padding: 50px 0px 0px 15px;
-        top: 68px;
+        top: 40px;
     }
     .header-cont .right{
         position: inherit;
