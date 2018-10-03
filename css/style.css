@@ -110,7 +110,7 @@ a.navbar-brand {
 @media (max-width: 768px){
     .header-cont {
         padding: 50px 0px 0px 15px;
-        top: 40px;
+        top: 68px;
     }
     .header-cont .right{
         position: inherit;
@@ -313,9 +313,6 @@ section.web-des-sec-two .row .col-sm-4 .row:nth-of-type(1) ul.side-nav li:last-o
     padding: 30px 0;
     border-bottom: 1px dashed #bdbec0;
     margin-bottom: 60px;
-}
-.cl-ac p, .cl-ac h2 {
-    padding-left: 15px;
 }
 .cl-ac-border-no{
     margin-bottom: 0px!important; 
