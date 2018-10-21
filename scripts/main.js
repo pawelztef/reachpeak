@@ -54,3 +54,7 @@ $('a[href*="#"]')
       }
     }
   });
+
+  // $(document).ready(function(){
+  //    $.cookieBar();
+  // });
