@@ -1,0 +1,14 @@
+body.web-to-lead #form_submit {
+    background: #f4972d;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 0px;
+    float: right;
+}
+
+body.web-to-lead label{
+	display:none;
+}
+body.web-to-lead input, body.web-to-lead textarea{
+	border-radius:0px;
+}

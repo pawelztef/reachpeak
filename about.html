@@ -39,20 +39,19 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <div class="navbar-wrp  hidden-xs">
             <ul id="navbar-top" class="nav navbar-nav navbar-right">
-              <li>Cork +353 (0)71 457 98 44</li>
-              <li>|</li>
-              <li>Dublin +353 (0)1 343 34 87</li>
+              <li><a href="tel:00353 89 496 3117"><i class="fas fa-phone"></i>(+353) 89 496 3117</a></li>
+              <li><a href="mailto:info@reachpeak.eu"><i class="fas fa-envelope"></i>info@reachpeak.eu</a></li>
             </ul>
           </div>
           <div class="navbar-wrp">
             <ul id="navbar-soc" class=" hidden-xs nav navbar-nav navbar-right">
-              <li><a target="_self" href="https://www.facebook.com/reachpeak.agency"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a target="_self" href="https://twitter.com/Reachpeak2"><i class="fab fa-twitter"></i></a></li>
-              <li><a target="_self" href="https://www.instagram.com/reachpeak.agency/"><i class="fab fa-instagram"></i></a></li>
-              <!--  -->
+              <li><a target="_blank" href="https://www.facebook.com/reachpeak.agency"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a target="_blank" href="https://twitter.com/Reachpeak2"><i class="fab fa-twitter"></i></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/reachpeak.agency/"><i class="fab fa-instagram"></i></a></li>
+              <!-- <li><a target="_self" href="#"><i class="fab fa-google-plus-g"></i></a></li> -->
             </ul>
             <ul id="navbar-main" class="nav navbar-nav navbar-right">
-              <li><a href="web-development.html">Web Development</a></li>
+              <li><a href="web-development.html">Web Development<span class="sr-only">(current)</span></a></li>
               <li><a href="web-design.html">Web Design</a></li>
               <li><a href="graphic-design.html">Graphic Design</a></li>
               <li><a href="digital-marketing.html">Digital Marketing</a></li>
@@ -64,7 +63,7 @@
         </div>
       </div>
     </nav>
-    <!-- NAVBAR END -->
+    <!-- END OF NAVBAR -->
     <!-- HEADER -->
     <div class="header-cont-page my-paroller" data-paroller-factor="0.3" style="background-image:url(images/header-page.png);">
       <h1 class="text-center">About us</h1>
@@ -84,13 +83,15 @@
     </section>
     <section class="container about-sec-two">
       <div class="row">
-        <div class="col-md-6" data-aos="fade-right">
+        <div class="col-md-12" data-aos="fade-right">
           <h3>Our Mission</h3>
           <p>
           Our mission is to help our clients achieve growth through their online presence. We follow one unified way through design, build and test web applications to ultimately drive growth for our clients. We never rest on the successes of today, we push our clients, our employees to go to the edge of what is possible and exceed their own expectations.
           </p>
           <h3>Our Services</h3>
-          <ul class="mis-ul">
+          <div class="row">
+          <div class="col-md-6">
+             <ul class="mis-ul">
             <li>
               <i class="fas fa-check"></i> Project Mockups / PSD
             </li>
@@ -121,9 +122,12 @@
             <li>
               <i class="fas fa-check"></i> ssl certificates
             </li>
-            <li>
-              <i class="fas fa-check"></i> site auditing
-            </li>
+      
+        
+          </ul>
+          </div>
+          <div class="col-md-6">
+          <ul class="mis-ul">
             <li>
               <i class="fas fa-check"></i> page hardening
             </li>
@@ -155,27 +159,30 @@
               <i class="fas fa-check"></i> E-mailing campagins
             </li>
           </ul>
+          </div>
         </div>
-        <div class="col-md-6" data-aos="fade-left">
+      
+        </div>
+        <div class="col-md-12" data-aos="fade-left">
           <h3>Our Process</h3>
           <div>
-            <h4>Recon/Project initialization</h4>
+            <h4><b>Recon/Project initialization</b></h4>
             <p>
             We begin with chatting with you and asking about your business. After initial research of your market we discuss our findings and possible ideas. In the end a project plan is created.
             </p>
-            <h4>Design</h4>
+            <h4><b>Design</b></h4>
             <p>
             Design brief is sent to our design team. With yours collaboration our we create wireframes, themes and mocks of your future website.
             </p>
-            <h4>Build</h4>
+            <h4><b>Build</b></h4>
             <p>
             According to your requirements and previous results of work our team of experienced programmers build your site. Good coding practice is constantly monitored. Our aim is to create clean and secure code .
             </p>
-            <h4>Deploy & Train</h4>
+            <h4><b>Deploy & Train</b></h4>
             <p>
             We offer you training and support in understanding how to use your new site. Moreover we will teach you how to maintain and update your new website.
             </p>
-            <h4>Support</h4>
+            <h4><b>Support</b></h4>
             <p>
             Once the site has been deployed and proper training given we continue to support you, offer advice how to develop your site's potential.
             </p>
@@ -215,7 +222,7 @@
             </p>
           </div>
           <div class="col-sm-6 col-md-4">
-            <a href="contact.html">Get a Quote</a>
+            <a href="#" data-toggle="modal" data-target="#Get_a_Quote">Get a Quote</a>
           </div>
         </div>
       </div>
@@ -311,42 +318,38 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6 col-xs-12">
-            <ul class="ft-lt">
+            <ul class="ft-lt ft-lt-hover">
               <li><a href="web-development.html"><i class="fas fa-plus"></i>Web Development</a></li>
               <li><a href="web-design.html"><i class="fas fa-plus"></i>Web Design</a></li>
               <li><a href="graphic-design.html"><i class="fas fa-plus"></i>Graphic Design</a></li>
               <li><a href="digital-marketing.html"><i class="fas fa-plus"></i>Digital Marketing</a></li>
-              <li><a href="portfolio.html"><i class="fas fa-plus"></i>Portfolio</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <ul class="ft-lt ft-lt-hover">
+             <li><a href="portfolio.html"><i class="fas fa-plus"></i>Portfolio</a></li>
               <li><a href="about.html"><i class="fas fa-plus"></i>About us</a></li>
+              <li><a href="portfolio.html"><i class="fas fa-plus"></i>Contact</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <ul class="ft-lt">
-              <li><a href="#"><i class="fas fa-plus"></i>Hosting Login</a></li>
-              <li><a href="#"><i class="fas fa-plus"></i>Support FAQ</a></li>
-              <li><a href="#"><i class="fas fa-plus"></i>Request Support</a></li>
-              <li><a href="#"><i class="fas fa-plus"></i>Learning Center</a></li>
-              <li><a href="#"><i class="fas fa-plus"></i>Project Dashboard</a></li>
-              <li><a href="#"><i class="fas fa-plus"></i>Pay Bils</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <ul class="ft-lt">
-              <li><a href="#"><i class="fas fa-map-marker-alt"></i>12D, Six Cross Roads, Waterford</a></li>
-              <li><a href="#"><i class="fas fa-phone"></i>081-393252</a></li>
-              <li><a href="#"><i class="fas fa-envelope"></i>info@irelandweb.com</a></li>
+              <li><a href="#"><i class="fas fa-map-marker-alt"></i>Santry Cross, Ballymun, Dublin 11</a></li>
+              <li><a href="tel:00353 89 496 3117"><i class="fas fa-phone"></i>(+353) 89 496 3117</a></li>
+              <li><a href="mailto:info@reachpeak.eu"><i class="fas fa-envelope"></i>info@reachpeak.eu</a></li>
               <li>
                 <ul class="ft-soc-lt">
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a a target="_blank" href="https://www.facebook.com/reachpeak.agency"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a a target="_blank" href="https://twitter.com/Reachpeak2"><i class="fab fa-twitter"></i></a></li>
+                  <li><a a target="_blank" href="https://www.instagram.com/reachpeak.agency/"><i class="fab fa-instagram"></i></a></li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="animation-map">
-              <img src="http://reachpeak.eu/wp-content/themes/reachpeak/includes/img/map.png">
+              <img src="images/map.png">
               <div id="container1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Warszawa, Polska">
                 <div class="dot"></div>
                 <div class="pulse"></div>
@@ -363,8 +366,32 @@
           </div>
         </div>
         <hr>
+        <p class="ft_logo_wrp text-center">
+        Copyright © 2018 
+        <a href="index.html" target="_self" alt="reachpeak footer logo" title="reachpeak footer logo">
+          <img class="block-ceter" alt="reachpeak footer logo" id="ft_logo" src="images/reachpeak-footer.png">
+        </a>
+        </p>
       </div>
-    </footer>   <!-- FOOTER END --> 
+    </footer>
+    <!-- END OF FOOTER --> 
+        <!-- Modal --> 
+
+    <div class="modal modal_quote fade" id="Get_a_Quote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="700" src="http://crm.reachpeak.eu/forms/wtl/0e1d86035587f0ca95690a23d20416fd" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF Modal --> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="scripts/owlcarousel/owl.carousel.min.js"></script>
